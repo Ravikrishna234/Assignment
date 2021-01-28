@@ -31,10 +31,10 @@ export class SeriesComponent implements OnInit {
        val_+=2;
        this.a[i]=st_;
       }
-      console.log(this.a)
+      // console.log(this.a)
 
     }
-    console.log(this.filterKeys)
+    // console.log(this.filterKeys)
     this.endValue = this.a[Number(this.filterKeys['num']) ]
   }
 }
