@@ -1,0 +1,15 @@
+<form [formGroup]="phoneForm" (ngSubmit)='submit()' >
+<div formArrayName='field' *ngFor="let a of phoneForm.get('field')['controls']; let i=index;">
+<div [formGroupName]= 'i'>
+    <label for="" class="phone"></label>
+    <input type="text" name="phone" formControlName="phone">
+<a *ngIf="i>0" href="javascript:void(0) "(click)= "removeItemC(i) ">
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+<br>
+<button type="button" (click)="addItem()" >Add another phone number </button><br>
+<button type="submit">submit</button>
+</form>
+

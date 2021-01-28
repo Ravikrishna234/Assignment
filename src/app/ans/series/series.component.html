@@ -1,0 +1,15 @@
+<form #uptForm="ngForm" (ngSubmit)="sendNum(uptForm)" novalidate>
+
+<div class="row">
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group form-focus">
+          <label class="control-label">Ente r Number</label>
+          <input type="text" class="form-control floating" [(ngModel)] = "filterKeys.num" name="num" #num="ngModel" />
+          <button type="submit">
+           Send</button>
+          EndValue is{{endValue}}
+
+        </div>
+      </div>
+</div></form>
+<router-outlet></router-outlet>
